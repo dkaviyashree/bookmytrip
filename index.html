@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookMyTrip - Travel and Explore</title>
+
+    <link rel="icon" type="image/jpg" href="image/images.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <img src="image/images.jpg" alt="BookMyTrip Logo">
+            <h2>BookMyTrip</h2>
+        </div>
+
+        <div class="header-contact">
+            <p>Travel Support</p>
+            <p>+91 98765 43210</p>
+        </div>
+
+        <button id="menuButton" class="menu-button">Menu</button>
+
+    </header>
+
+    <nav id="navigation" class="navigation">
+        <a href="#home">Home</a>
+        <a href="#places">Destinations</a>
+        <a href="#booking">Plan a Trip</a>
+        <a href="#packages">Holiday Packages</a>
+        <a href="#tips">Travel Tips</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="banner" id="home">
+
+        <div class="banner-content">
+            <p class="small-heading">YOUR JOURNEY STARTS HERE</p>
+
+            <h1>Travel More.<br>Discover More.</h1>
+
+            <p>
+                Explore beautiful places, enjoy new experiences
+                and make memories with your family and friends.
+            </p>
+
+            <a href="#places" class="button">Explore Places</a>
+        </div>
+
+    </section>
+
+    <section class="intro">
+        <h2>Find a Place You Will Love</h2>
+
+        <p>
+            Whether you enjoy the beach, mountains or a quiet
+            weekend away, find ideas for your next holiday here.
+        </p>
+    </section>
+
+    <section class="section" id="places">
+
+        <div class="section-heading">
+            <h2>Places to Explore</h2>
+            <p>Choose a destination for your next journey.</p>
+        </div>
+
+        <div class="destination-list">
+
+            <div class="destination-card">
+                <img src="image/set-sail1.jpg" alt="Beach destination">
+
+                <div class="card-content">
+                    <h3>Beach Escape</h3>
+                    <p>
+                        Enjoy the sea breeze, beautiful views
+                        and a relaxing day by the water.
+                    </p>
+                    <a href="#booking">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="image/images1.jpg" alt="Green mountain destination">
+
+                <div class="card-content">
+                    <h3>Mountain Break</h3>
+                    <p>
+                        Discover green hills, cool weather
+                        and peaceful surroundings.
+                    </p>
+                    <a href="#booking">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="image/images2.jpg" alt="Holiday destination">
+
+                <div class="card-content">
+                    <h3>Family Holiday</h3>
+                    <p>
+                        Spend time together and enjoy
+                        a refreshing break from daily life.
+                    </p>
+                    <a href="#booking">Plan Your Visit</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+
+        <div class="booking-banner">
+
+            <div class="booking-text">
+                <p class="small-heading">PLAN YOUR HOLIDAY</p>
+
+                <h2>Where Would You Like to Go?</h2>
+
+                <p>
+                    Choose your destination and get ready
+                    for your next trip.
+                </p>
+            </div>
+
+        </div>
+
+        <form id="bookingForm" class="booking-form">
+
+            <div class="form-field">
+                <label for="destination">Where?</label>
+                <input
+                    type="text"
+                    id="destination"
+                    placeholder="Enter destination"
+                    required
+                >
+            </div>
+
+            <div class="form-field">
+                <label for="tripType">Trip Type</label>
+                <select id="tripType" required>
+                    <option value="">Select trip type</option>
+                    <option value="Family trip">Family</option>
+                    <option value="Friends trip">Friends</option>
+                    <option value="Solo trip">Solo</option>
+                    <option value="Couple trip">Couple</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="travelDate">When?</label>
+                <input type="date" id="travelDate" required>
+            </div>
+
+            <div class="form-field">
+                <label for="travellers">Travellers</label>
+                <select id="travellers" required>
+                    <option value="1 person">1 Person</option>
+                    <option value="2 people">2 People</option>
+                    <option value="3 people">3 People</option>
+                    <option value="4 people">4 People</option>
+                    <option value="5 or more people">5+ People</option>
+                </select>
+            </div>
+
+            <button type="submit" class="button">Search</button>
+
+            <p id="bookingMessage" class="message"></p>
+
+        </form>
+
+    </section>
+
+    <section class="section packages" id="packages">
+
+        <div class="section-heading">
+            <h2>Weekend Holiday Ideas</h2>
+            <p>Some affordable ideas for your next short trip.</p>
+        </div>
+
+        <div class="package-list">
+
+            <div class="package-card">
+                <img src="image/images2.jpg" alt="Nature holiday">
+
+                <div class="card-content">
+                    <h3>Nature Weekend</h3>
+                    <p>2 Days / 1 Night</p>
+                    <p>Enjoy a peaceful stay surrounded by nature.</p>
+                    <h4>Budget: ₹2,500</h4>
+                    <a href="#booking">Choose Trip</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <img src="image/image4.jpg" alt="Adventure holiday">
+
+                <div class="card-content">
+                    <h3>Adventure Break</h3>
+                    <p>2 Days / 1 Night</p>
+                    <p>Explore new places with your friends.</p>
+                    <h4>Budget: ₹3,000</h4>
+                    <a href="#booking">Choose Trip</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <img src="image/images3.jpg" alt="Relaxing holiday">
+
+                <div class="card-content">
+                    <h3>Relaxing Escape</h3>
+                    <p>3 Days / 2 Nights</p>
+                    <p>Take some time away from your busy routine.</p>
+                    <h4>Budget: ₹4,500</h4>
+                    <a href="#booking">Choose Trip</a>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="note">
+            Note: These are sample budgets per person, not confirmed prices.
+        </p>
+
+    </section>
+
+    <section class="tips-section" id="tips">
+
+        <div class="tips-image">
+            <img src="image/drink1.jpg" alt="Food and travel">
+        </div>
+
+        <div class="tips-content">
+            <p class="small-heading">BEFORE YOU TRAVEL</p>
+
+            <h2>A Few Helpful Travel Tips</h2>
+
+            <ul>
+                <li>Prepare a budget before starting your trip.</li>
+                <li>Book your transport and accommodation early.</li>
+                <li>Keep your identity documents safe.</li>
+                <li>Check the weather before travelling.</li>
+                <li>Carry water and essential medicines.</li>
+            </ul>
+
+            <a href="#booking" class="button">Plan a Trip</a>
+        </div>
+
+    </section>
+
+    <section class="newsletter" id="contact">
+
+        <h2>Get More Travel Ideas</h2>
+
+        <p>
+            Enter your email to receive travel tips and holiday ideas.
+        </p>
+
+        <form id="newsletterForm">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <button type="submit" class="button">Subscribe</button>
+
+        </form>
+
+        <p id="newsletterMessage" class="message"></p>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <h2>BookMyTrip</h2>
+                <p>Helping you find ideas for your next holiday.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#places">Destinations</a>
+                <a href="#packages">Packages</a>
+                <a href="#tips">Travel Tips</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="year"></span> BookMyTrip.
+            Student Website Project.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
